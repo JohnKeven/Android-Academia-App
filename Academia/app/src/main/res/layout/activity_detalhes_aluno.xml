@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DetalhesAlunoActivity">
+
+    <ListView
+        android:id="@+id/lvDetalhesAluno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lvDetalhesAluno"
+        android:onClick="onClickEditarAlunos"
+        android:text="Editar" />
+
+    <Button
+        android:id="@+id/btnRemover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEditar"
+        android:onClick="onClickRemoverAlunos"
+        android:text="Remover" />
+
+    <Button
+        android:id="@+id/btnPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRemover"
+        android:onClick="onClickRealizarPagamento"
+        android:text="Realizar Pagamento" />
+</RelativeLayout>
